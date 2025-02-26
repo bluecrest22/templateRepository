@@ -14,8 +14,9 @@
     "webpack-merge": "^6.0.1"
   },
   "scripts": {
-    "prestart": "npx prettier . --write",
-    "start": "webpack serve --open --config webpack.dev.js",
+    "prestart": "npx eslint src",
+    "start": "npx prettier src/ --write",
+    "poststart": "webpack serve --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
   }
 }
