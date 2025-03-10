@@ -1,3 +1,12 @@
-body {
-  background-color: rebeccapurple;
+body > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.weather-data {
+  visibility: hidden;
+}
+.weather-data > {
+  visibility: inherit;
 }

@@ -3,7 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Template</title>
+    <title>Weather App</title>
   </head>
-  <body></body>
+  <body>
+    <div class="main-div">
+      <h1>Weather App</h1>
+      <fieldset>
+        <legend>Weather Search</legend>
+        <div class="search-div">
+          <label for="weather-search">Location</label>
+          <input type="text" name="weather-search" id="weather-search" />
+          <button class="weather-search-button">Search</button>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Temperature</legend>
+        <div>
+          <input
+            type="radio"
+            id="fahrenheit"
+            name="temp"
+            value="fahrentheit"
+            checked
+          />
+          <label for="fahrentheit">&deg;F</label>
+          <input type="radio" id="celsius" name="temp" value="celsius" />
+          <label for="celsius">&deg;C</label>
+        </div>
+      </fieldset>
+    </div>
+      <div class="weather-data">
+        <h3>Current Forecast</h3>
+        <p class="temp-field">Default</p>
+        <p class="humid-field">Default</p>
+        <img src="#" class="icon-field" />
+    </div>
+  </body>
 </html>
